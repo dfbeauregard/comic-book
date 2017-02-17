@@ -1,0 +1,77 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: WPINBOUND_INFOGRAPHIC_FINAL.ai
+Color Mode: CMYK color
+Color Profile: U.S. Web Coated (SWOP) v2
+Ruler Units: inches
+Artboard Dimensions: 9.178 in x 27.004 in
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+ *** ORANGE 30M.40Y. (CMYK)
+*** new 50 50 (CMYK)
+-BLUE-jkl10/0 (CMYK)
+-WHITE-4/4/12/0 (CMYK)
+02-Dk-brwn copy 2 (CMYK)
+New CKKLKSwatch 8 (CMYK)
+PANTONE 165 C (Lab)
+PANTONE 165 C 2 (Lab)
+PANTONE 166 C (Lab)
+PANTONE 174 C (Lab)
+PANTONE 174 C copy (Lab)
+PANTONE 2965 C (Lab)
+PANTONE 2975 C (Lab)
+PANTONE 2985 C (Lab)
+PANTONE 2995 C (Lab)
+PANTONE 3005 C (Lab)
+PANTONE 3015 C (Lab)
+PANTONE 3015 C copy (Lab)
+PANTONE 3025 C (Lab)
+PANTONE 303 C (Lab)
+PANTONE 3035 C (Lab)
+PANTONE 3035 C copy (Lab)
+PANTONE 3035 C copy 2 (Lab)
+PANTONE 315 C (Lab)
+PANTONE 350 C (Lab)
+PANTONE 357 C (Lab)
+PANTONE 560 C (Lab)
+PANTONE 561 C (Lab)
+PANTONE 627 C (Lab)
+PANTONE 7482 C (Lab)
+PANTONE 7484 C (Lab)
+PANTONE 7694 C (Lab)
+PANTONE 7731 C (Lab)
+rt2skinkown copy (CMYK)
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Chalkduster (TrueType)
+Komika Text Kaps Bold (TrueType)
+Komika Text Kaps Bold Italic (TrueType)
+Upheaval TT -BRK- (TrueType)
+Museo Slab 1000 (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+NONE

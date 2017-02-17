@@ -1,0 +1,751 @@
+@font-face {
+  font-family: 'KomikaBold';
+       src: url('Fonts/KomikaTextKaps-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Chalkduster';
+       src: url('Fonts/Chalkduster.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Upheaval';
+       src: url('Fonts/UpheavalTT-BRK-.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+.clearfix:before, .clearfix:after {display: table;content: "";}
+.clearfix:after {clear: both;}
+.text-center {text-align: center;}
+.line-height p {line-height: 1.05em;}
+@media (max-width: 767px) {
+	.mobile-text-center {text-align: center;}
+}
+img {max-width: 100%;}
+.comic-book-module {
+
+	background-color: #231f20; 
+	padding: 15px;
+	max-width: 850px; 
+	margin: 0 auto; 
+	float: none;
+	font-family: 'KomikaBold', sans-serif;
+	color: #231f20;
+	line-height: 1.05em;
+	font-size: 16px;
+}
+.large-font {font-size: 28px; line-height: 1.10em;}
+.comic-book-module,
+.comic-book-module * {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+.section {margin-bottom: 15px;}
+.section:last-child {margin-bottom: 0px;}
+.section > div {float: left;}
+
+.comic-book-module p {margin: 0;}
+
+.orange-block {color: #fff; background-color: #ff671b; padding: 5px 8px;}
+.orange-text {color: #ff671b;}
+.blue-text {color: #00609c;}
+
+
+/***** Sadsville *******/
+.section-sadsville {
+	background-image: url('Images/sadsville-bg.jpg');
+	background-size: cover;
+	background-position: 50%;
+}
+.section-sadsville,
+.section-sadsville > div {min-height: 195px;}
+.section-sadsville .left-block {width: 29%; padding: 5px 15px 5px 8px; position: relative;}
+.section-sadsville .left-block img {width: 100%; margin-top: -14px;}
+.section-sadsville .left-block:after,
+.section-sadsville .center-block:after {
+	content: '';
+	background-image: url('Images/divider.png');
+	height: 80%;
+	width: 3px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	background-size: cover;
+}
+
+.section-sadsville .center-block {position: relative;width: 36%; padding: 10px 20px;}
+.quote-block {
+	color: #fff;
+	background-color: #414042; 
+	padding: 8px 12px; 
+	border-radius: 8px; 
+	position: relative;
+	display: inline-block;
+}
+
+.fade-section .quote-module {opacity: 0;visibility: hidden;transition: .25s;}
+.quote-module.quote-visible {visibility: visible; opacity: 1;}
+
+.rhonda-quote.quote-block {float: right; max-width: 118px; margin-right: 55px;}
+
+.quote-block:after {
+	content: '';
+	background-image: url('Images/quote-block-tail.png');
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	bottom: -14px;
+	left: 20%;
+}
+.rhonda-quote.quote-block:after {bottom: -10px;}
+.robbie-rhonda-pic {position: absolute; bottom: 0; left: 5px;}
+
+.section-sadsville .right-block {padding: 10px; width: 35%; position: relative; float: right;}
+
+.cms-tag {position: absolute;background-color: #414042; color: #fff; padding: 5px 15px; display: inline-block;}
+#hubspot_tag {top: 59px; left: 34%;}
+#marketo_tag {top: 27px; left: 10px;}
+#pardot_tag {top: 50%; left: 49px;}
+#infusionsoft_tag {top: 54%; right: 18px;}
+#sharpspring_tag {bottom: 30px; left: 8px;}
+#hatchbuck_tag {bottom: 17px; right: 37px;}
+
+.has-angle.left-angle:before {
+	content: '';
+	background-image: url('Images/left-angle.png');
+	width: 100%; 
+	height: 5px;
+	background-size: cover;
+	top: -5px;
+	position: absolute;
+	right: 0;
+}
+
+.has-angle.right-angle:before {
+	content: '';
+	background-image: url('Images/right-angle.png');
+	width: 100%; 
+	height: 5px;
+	background-size: cover;
+	top: -5px;
+	position: absolute;
+	left: 0;
+}
+
+.has-angle.bottom-angle:before {
+	content: '';
+	background-image: url('Images/bottom-angle.png');
+	width: 100%; 
+	height: 5px;
+	background-size: cover;
+	bottom: -5px;
+	position: absolute;
+	left: 0;
+}
+
+@media (max-width: 767px) {
+	.comic-book-module {max-width: 310px;}
+	.section > div {float: none;}
+	.mobile-marginB15 {margin-bottom: 15px;}
+	.section-sadsville .left-block,
+	.section-sadsville .center-block,
+	.section-sadsville .right-block {width: 100%; float: none;}
+	.section-sadsville .right-block {min-height: 130px; height: auto!important;}
+	#hubspot_tag {top: 10px; left: auto; right: 10px;}
+	#marketo_tag {top: 12px; left: 10px;}
+	#pardot_tag {top: 52px; left: 12px;}
+	#infusionsoft_tag {top: 54px; right: 18px;}
+	#sharpspring_tag {bottom: 10px; left: 8px;}
+	#hatchbuck_tag {bottom: 12px; right: 8px;}
+	.rhonda-quote.quote-block {margin-right: 25px;}
+}
+
+@media (min-width: 768px) {
+	.section .span2 {float: left; width: calc(23% - 15px); margin-right: 15px;}
+	.section .span6 {float: left; width: calc(47% - 15px); margin-right: 15px;}
+	.section .span4 {float: left; width: 30%;}
+}
+
+.robbie-lightbulb {
+	background-image: url("Images/sky-background.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 165px;
+	position: relative;
+}
+
+.robbie-lightbulb .lightbulb {padding-top: 10px;}
+.robbie-lightbulb .rl-robbie {position: absolute; bottom: 0px; left: 27px;}
+.robbie-idea {
+	background-image: url("Images/cloud-background1.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	position: relative;
+}
+.robbie-idea .quote-wrap {
+	background-image: url("Images/quote-group.png");
+	background-repeat: no-repeat;
+	width: 280px;
+	height: 140px;
+	margin-left: 30px;
+	position: relative;
+	background-size: cover;
+}
+.ri-quote1{position: absolute;top: 12px;font-size: 14px;left: 40px;}
+.ri-quote2 {position: absolute;font-size: 13px;line-height: 1.05em;left: 9px;top: 35px; max-width: 255px; text-align: center;}
+.ri-quote3 {position: absolute;right: 33px;font-size: 12px;bottom: 18px;}
+
+.ri-robbie-image {position: absolute; bottom: 0; left: 20px;}
+
+.wp2-logo {background-color: #fff; padding-top: 14px;}
+
+@media (max-width: 767px) {
+	.robbie-idea .quote-wrap {margin-left: 8px;}
+	.ri-robbie-image {left: 15px;}
+	.robbie-lightbulb .rl-robbie {left: 81px;}
+}
+
+/****** Chalkboard Section *******/
+.chalkboard {
+	background-image: url("Images/chalkboard.jpg");
+	background-size: cover;
+	position: relative;
+	padding: 30px 10px 67px 63px;
+	font-family: 'Chalkduster', sans-serif;
+	color: #57c1e8;
+	font-size: 14px;
+	width: calc(78% - 15px);
+	margin-right: 15px;
+}
+.chalkboard h4 {color: #fff; font-size: 18px; margin: 0;}
+.chalkboard .chalk-entry {margin-bottom: 20px;}
+.chalkboard .chalk-entry h4 {}
+.chalkboard .chalk-entry p {}
+.chalkboard .subtotal {margin-top: 30px;}
+.chalkboard .subtotal h4 span {color: #57c1e8;}
+.chalkboard .subtotal h3 {font-size: 22px;}
+
+.orange-arrow {position: absolute; left: 0; bottom: 69px;}
+.chalk-robbie {position: absolute; right: 20%; width: 265px; bottom: 0;}
+
+
+.vertical-banner {
+	width: 22%; 
+	float: left;
+	background-image: url("Images/infographic-bg.jpg");
+	background-size: cover;
+	text-align: center;
+	background-position: center bottom;
+	padding-top: 30px;
+}
+.vertical-banner img {width: 160px;}
+
+
+	.chalk-entry:first-child {
+		padding-left: 10px;
+	    -ms-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg); 
+	    transform: rotate(0deg);
+	}
+	.chalk-entry:nth-child(2) {
+		padding-left: 0px;
+	    -ms-transform: rotate(0.5deg);
+	    -webkit-transform: rotate(0.5deg); 
+	    transform: rotate(0.5deg);
+	}
+	.chalk-entry:nth-child(3) {
+		padding-left: 5px;
+	    -ms-transform: rotate(-1.25deg);
+	    -webkit-transform: rotate(-1.25deg); 
+	    transform: rotate(-1.25deg);
+	}
+	.chalk-entry:nth-child(4) {
+		padding-left: 30px;
+	    -ms-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg); 
+	    transform: rotate(0deg);
+	}
+	.chalk-entry:nth-child(5) {
+		padding-left: 26px;
+	    -ms-transform: rotate(0.5deg);
+	    -webkit-transform: rotate(0.5deg); 
+	    transform: rotate(0.5deg);
+	}
+	.chalk-entry:nth-child(6) {
+		padding-left: 26px;
+	    -ms-transform: rotate(0.5deg);
+	    -webkit-transform: rotate(0.5deg); 
+	    transform: rotate(0.5deg);
+	}
+	.chalk-entry:nth-child(7) {
+		padding-left: 5px;
+	    -ms-transform: rotate(-1.5deg);
+	    -webkit-transform: rotate(-1.5deg); 
+	    transform: rotate(-1.5deg);
+	}
+	.chalk-entry:nth-child(8) {
+		padding-left: 25px;
+	    -ms-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg); 
+	    transform: rotate(0deg);
+	}
+	.chalk-entry:nth-child(9) {
+		padding-left: 25px;
+	    -ms-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg); 
+	    transform: rotate(0deg);
+	}
+
+
+@media (max-width: 767px) {
+	.vertical-banner {width: 100%;}
+	.chalkboard {width: 100%; padding: 20px 20px 100px; margin-bottom: 15px;}
+	.orange-arrow {display: none;}
+	.chalk-robbie {right: 0; width: auto; height: 90px;}
+}
+
+
+/****** Empower ********/
+
+@media (min-width: 768px) {
+	.section .span9 {float: left; width: calc(73% - 15px); margin-right: 15px;}
+	.section .span3 {float: left; width: 27%;}
+}
+
+.empower-section {
+	background-image: url("Images/empowered-background.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	position: relative;
+	min-height: 200px;
+}
+.empower-section .robbie-empowered {position: absolute; bottom: 0; left: 20px; width: 170px;z-index: 4;}
+.empower-section .empowered-quote-bg {position: absolute; top: 0; left: 66px; width: 220px;z-index: 5;}
+.empower-section .happy-robots {position: absolute; right: 50px; bottom: 30px;z-index:3;}
+.empower-section p {
+	text-transform: uppercase; 
+	font-family: 'Upheaval', sans-serif;
+	color: #ff671b; 
+	position: absolute; 
+	text-align: center; 
+	max-width: 203px; 
+	left: 74px; 
+	top: 10px;
+	font-size: 14px;
+	line-height: 1.05em;
+	z-index: 6;
+}
+.eight-bit-quote {font-family: 'Upheaval', sans-serif; line-height: 1.05em;}
+.empower-section p span.upheaval {font-size: 27px; display: block; color: #00609c;}
+
+.wow-section {
+	background-image: url("Images/wow-background.jpg");
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	min-height: 200px;
+	text-align: center;
+}
+.wow-section img {position: absolute; top: 20px; left: 0; right: 0; margin: 0 auto;}
+.wow-section .wow-couple {top: auto; bottom: 0; width: 190px;}
+
+@media (max-width: 767px) {
+	.empower-section .happy-robots {opacity: .75; margin: 0 auto; left: 0; right: 0;}
+}
+
+/***** Office Section ******/
+.blue-quote {
+	color: #fff;
+	background-color: #00a8e1;
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(2,42,58,1);
+	-moz-box-shadow: 5px 5px 0px 0px rgba(2,42,58,1);
+	box-shadow: 5px 5px 0px 0px rgba(2,42,58,1);
+	border-radius: 6px;
+	padding: 8px;
+}
+
+.blue-quote.qtail_left {position: relative;}
+.blue-quote.qtail_left:before {
+	content: '';
+	width: 14px;
+	height: 16px;
+	background-image: url("Images/left-quote-tail.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -14px;
+	top: 50%;
+}
+.blue-quote.qtail_right {position: relative;}
+.blue-quote.qtail_right:before {
+	content: '';
+	width: 16px;
+	height: 12px;
+	background-image: url("Images/right-quote-tail.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -16px;
+	top: 40%;
+}
+.blue-quote.qtail_bottom {position: relative;}
+.blue-quote.qtail_bottom:before {
+	content: '';
+	width: 17px;
+	height: 18px;
+	background-image: url("Images/bottom-quote-tail.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 15px;
+	bottom: -18px;
+}
+  
+.office-section {
+	background-image: url("Images/office.jpg");
+	background-size: cover;
+	min-height: 170px;
+	position: relative;
+	padding: 10px 0 10px 243px;
+}
+
+.office-section .office-worker {
+	width: 150px; 
+	position: absolute; 
+	left: 100px; 
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.office-section .oq1 {display: inline-block; width: 20%; margin-right: 14px;}
+.office-section .oq2 {display: inline-block; width: 20%; margin-right: 14px;}
+.office-section .oq3 {display: inline-block; width: calc(55% - 28px); }
+.office-section .oq4 {width: 95%; position: relative;}
+
+@media (max-width: 767px) {
+
+	.blue-quote:before {display: none;}
+	.office-section {padding: 15px;background-color: #0a3e53; background-size: contain; background-repeat: no-repeat;}
+	.office-section .office-worker {width: 120px; display: block; margin: 0 auto 20px; position: static; transform: none;}
+	.office-section .office-quote {width: 90%; margin: 0 auto 10px; display: block;}
+}
+
+/******* Share Knowledge Section *********/
+
+@media (min-width: 768px) {
+	.section .span5 {float: left; width: calc(48% - 15px); margin-right: 15px;}
+	.section .span7 {float: left; width: 52%;}
+}
+
+.super-marketer-section {
+	background-image: url("Images/supermarketer-city.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 200px;
+	position: relative;
+}
+
+.super-marketer-section .hero-quote {max-width: 149px; position: absolute; left: 5px; top: 5px;}
+.super-marketer-section img.super-marketer {position: absolute; right: 72px; bottom: 0px;}
+
+.happy-people {
+	background-image: url("Images/happy-crowd.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: #fff;
+	position: relative;
+	min-height: 200px;
+}
+.happy-people .hq1 {position: absolute; max-width: 125px; left: 10px; top: 6px;}
+.happy-people .hq2 {position: absolute; max-width: 175px; left: 30px; top: 62px;}
+.happy-people .hq3 {position: absolute; max-width: 250px; left: 15px; top: 114px;}
+.happy-people .hq4 {position: absolute; max-width: 260px; left: 20px; bottom: 14px;}
+.happy-people .hq5 {position: absolute; max-width: 250px; right: 0px; top: 40px;}
+.happy-people .hq6 {position: absolute; max-width: 200px; right: 0px; bottom: 40px;}
+
+@media (max-width: 767px) {
+	.super-marketer-section {height: auto!important;}
+	.super-marketer-section .hero-quote {max-width: 90%; position: absolute; left: 5%; top: 5px;}
+	.super-marketer-section img.super-marketer {right: 44px; width: 140px;}
+
+	.happy-people {background-size: cover; height: auto!important; min-height: 0px; padding: 8px;}
+	.happy-people .happy-quote {position: static;max-width: 95%;background-color: rgba(0, 168, 225,0.75); width: 95%; margin-left: 2.5%; font-size: 14px; margin-bottom: 10px;}
+	
+}
+
+/******* Gladsville ********/
+.gladsville {
+	background-image: url("Images/gladsville.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	position: relative; 
+	padding: 50px 20px;
+	min-height: 211px;
+}
+
+.gladsville h3 {color: #004d71; margin: 0 0 8px;}
+.gladsville .gladsville-sign {float: left;}
+
+
+.gladsville-quote {}
+.gladsville-quote.gq1 {position: absolute; bottom: 109px; right: 400px; max-width: 96px;}
+.gladsville-quote.gq2 {position: absolute; bottom: 32px; right: 414px; max-width: 143px;}
+.gladsville-quote.gq3 {position: absolute; bottom: 125px; right: 200px; max-width: 132px;}
+
+.gladsville-quote-block {position: absolute; right: 14px; bottom: 100px; z-index: 1; width: 140px;}
+.gladsville-eight-bit {color: #ff671b; text-align: center; max-width: 124px; line-height: .9em; font-size: 14px; position: absolute; bottom: 145px; right: 24px; z-index: 2;}
+
+.gladsville-couple {position: absolute; bottom: 0; width: 187px; right: 211px;}
+.gladsville-robbie {position: absolute; bottom: 0; right: 80px; width: 120px;}
+
+@media (max-width: 991px) {
+	.gladsville-welcome {margin-top: -30px;}
+	.gladsville .gladsville-sign {width: 140px;}
+}
+
+@media (max-width: 767px) {
+	.gladsville {padding: 30px 15px 190px;}
+	.gladsville-welcome {margin: 0px 0 15px;}
+	.gladsville-quote.gq1 {position: static; max-width: 80%; margin-bottom: 8px;}
+	.gladsville-quote.gq2 {position: static; max-width: 80%; margin-bottom: 8px;}
+	.gladsville-quote.gq3 {position: static; max-width: 80%; float: right; margin-bottom: 8px;}
+	.gladsville-couple {position: static; float: right; width: 128px;}
+	.mobile-height-auto .set-height {height: auto!important;}
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.animated2 {
+  -webkit-animation-duration: 1.85s;
+  animation-duration: 1.85s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.animatedSlow {
+  -webkit-animation-duration: 10.85s;
+  animation-duration: 10.85s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+@-webkit-keyframes bounce2 {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+  }
+}
+@keyframes bounce2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+.bounce2 {
+  -webkit-animation-name: bounce2;
+  animation-name: bounce2;
+}
+@-webkit-keyframes bounce1 {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1px);
+  }
+}
+@keyframes bounce1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+}
+.bounce1 {
+  -webkit-animation-name: bounce1;
+  animation-name: bounce1;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    -ms-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    -ms-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
