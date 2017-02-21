@@ -235,10 +235,11 @@ img {max-width: 100%;}
 .chalkboard .chalk-entry p {}
 .chalkboard .subtotal {margin-top: 30px;}
 .chalkboard .subtotal h4 span {color: #57c1e8;}
-.chalkboard .subtotal h3 {font-size: 22px;}
+.chalkboard .subtotal h3 {font-size: 22px; color: #fff;}
+.chalkboard .subtotal h3 span {font-size: 24px; color: #57c1e8;}
 
 .orange-arrow {position: absolute; left: 0; bottom: 69px;}
-.chalk-robbie {position: absolute; right: 20%; width: 265px; bottom: 0;}
+.chalk-robbie {position: absolute; right: 5%; width: 265px; bottom: 0;}
 
 
 .vertical-banner {
