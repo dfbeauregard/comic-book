@@ -17,7 +17,7 @@ body {margin: 0;}
 .clearfix:after {clear: both;}
 .text-center {text-align: center;}
 .line-height p {line-height: 1.05em;}
-
+.marginB15 {margin-bottom: 15px;}
 
 @media (max-width: 767px) {
 	.mobile-text-center {text-align: center;}
@@ -153,12 +153,12 @@ img {max-width: 100%;}
 }
 
 @media (max-width: 767px) {
-	.comic-book-module {max-width: 310px;}
+	.comic-book-module {max-width: 585px;}
 	.section > div {float: none;}
 	.mobile-marginB15 {margin-bottom: 15px;}
 	.section-sadsville .left-block,
 	.section-sadsville .center-block,
-	.section-sadsville .right-block {width: 100%; float: none;}
+	.section-sadsville .right-block {width: 100%; float: none; max-width: 310px; margin: 0 auto;}
 	.section-sadsville .right-block {min-height: 130px; height: auto!important;}
 	#hubspot_tag {top: 10px; left: auto; right: 10px;}
 	#marketo_tag {top: 12px; left: 10px;}
@@ -167,6 +167,7 @@ img {max-width: 100%;}
 	#sharpspring_tag {bottom: 10px; left: 8px;}
 	#hatchbuck_tag {bottom: 12px; right: 8px;}
 	.rhonda-quote.quote-block {margin-right: 25px;}
+	.section-sadsville .left-block:after, .section-sadsville .center-block:after {display: none;}
 }
 
 @media (min-width: 768px) {
@@ -211,7 +212,7 @@ img {max-width: 100%;}
 @media (max-width: 767px) {
 	.robbie-idea .quote-wrap {margin-left: 2px; width: 280px; height: 140px;}
 	.ri-robbie-image {left: 15px;}
-	.robbie-lightbulb .rl-robbie {left: 81px;}
+	.robbie-lightbulb .rl-robbie {left: 0; right: 0; margin: 0 auto;}
 	.ri-quote1 {font-size: 13px;}
 	.ri-quote2 {font-size: 13px; max-width: 258px;}
 	.ri-quote3 {font-size: 12px;}
@@ -365,7 +366,7 @@ img {max-width: 100%;}
 @media (max-width: 767px) {
 	.empower-section .happy-robots {opacity: .75; margin: 0 auto; left: 0; right: 0;}
 	.empower-section .robbie-empowered {width: 129px;}
-	.empower-section p {left: 39px;}
+	.empower-section p {left: auto; right: 38px;}
 	.empower-section .empowered-quote-bg {right: 0; left: auto;width: 267px;}
 }
 
@@ -524,7 +525,7 @@ img {max-width: 100%;}
 	.gladsville-quote.gq1 {position: static; max-width: 80%; margin-bottom: 8px;}
 	.gladsville-quote.gq2 {position: static; max-width: 80%; margin-bottom: 8px;}
 	.gladsville-quote.gq3 {position: static; max-width: 80%; float: right; margin-bottom: 8px;}
-	.gladsville-couple {position: static; float: right; width: 128px;}
+	.gladsville-couple {position: static; float: right; width: 128px;clear: right;}
 	.mobile-height-auto .set-height {height: auto!important;}
 }
 
@@ -767,5 +768,6 @@ img {max-width: 100%;}
   -webkit-animation-name: tada;
   animation-name: tada;
 }
+
 
 
