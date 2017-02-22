@@ -1,13 +1,5 @@
 $(document).ready(function() {
-	/*
-    setTimeout(function() {
-		$('.robbie-quote').addClass("quote-visible");
-	},1000);
-	setTimeout(function() {
-		$('.rhonda-quote').addClass("quote-visible");
-	},2000);
-*/
-	setHeight();
+    setHeight();
     quoteFade();
 });
 
@@ -51,10 +43,11 @@ function quoteFade() {
 }
 
 function setHeight() {
-    $('.set-height-outer .set-height').css("height","auto");
+    $('.set-height-outer .set-height,.set-height2').css("height","auto");
     $('.set-height-outer .vertical-inner').css("padding-top","0");
     $('.set-height-outer').each(function() {
         var maxHeight=Math.max.apply(null,$(this).find(".set-height").map(function(){return $(this).outerHeight();}).get());
+        var maxHeight2=Math.max.apply(null,$(this).find(".set-height2").map(function(){return $(this).outerHeight();}).get());
         $(this).find('.set-height').each(function(){
         	var $sh = $(this);
         	var heightDifference = (maxHeight - $sh.outerHeight())/2;
@@ -63,6 +56,15 @@ function setHeight() {
         	if (heightDifference>2 && $sh.hasClass("vertical-center")) {
         		$sh.find(".vertical-inner").css("padding-top",heightDifference+"px");
         	}
-        })
+        });
+        $(this).find('.set-height2').each(function(){
+            var $sh2 = $(this);
+            var heightDifference2 = (maxHeight2 - $sh2.outerHeight())/2;
+
+            $sh2.css("height",maxHeight2);
+            if (heightDifference2>2 && $sh2.hasClass("vertical-center")) {
+                $sh2.find(".vertical-inner").css("padding-top",heightDifference2+"px");
+            }
+        });
     });
 }
